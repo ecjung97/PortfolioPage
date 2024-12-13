@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap");
+
+/* color-palatte:
+#222831
+#393E46
+#00ADB5
+#EEEEEE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding; 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+  justify-items: center;
+  background: #EEEEEE;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  width: 50rem;
+  border-bottom: 2px solid #222831;
+}
+.menu_text {
+  font-size: 100px;
+  font-weight: 800px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: "Kanit", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 3px #222831;
+  &:hover {
+    color: #222831;
+    cursor: pointer;
+    transition: 400ms ease;
+  }
+}
+/* .menu::after {
+  content: attr(data-text);
+  position: absolute;
+  color: #222831;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transition: clip-path 400ms ease;
+} */
