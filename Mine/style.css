@@ -17,19 +17,22 @@ body {
   height: 100vh;
   align-content: center;
   justify-items: center;
-  background: #EEEEEE;
+  background: #ebe8e4;
 }
 
-.main {
+.sub {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background: #ebe8e4; */
 }
 
 .menu {
+  display: flex;
   width: 50rem;
-  border-bottom: 2px solid #222831;
+  text-decoration: none;
+  border-bottom: 3px solid #222831;
 }
 .menu_text {
   font-size: 100px;
@@ -39,11 +42,11 @@ body {
   font-family: "Kanit", sans-serif;
   color: transparent;
   -webkit-text-stroke: 3px #222831;
-  &:hover {
-    color: #222831;
-    cursor: pointer;
-    transition: 400ms ease;
-  }
+}
+.menu:hover .menu_text {
+  color: #222831;
+  cursor: pointer;
+  transition: 400ms ease;
 }
 /* .menu::after {
   content: attr(data-text);
@@ -52,3 +55,14 @@ body {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
   transition: clip-path 400ms ease;
 } */
+.arrow-right {
+  width: 100px;
+  margin-left: 20px;
+  transform: translateX(-35%);
+  opacity: 0;
+  transition: transform 250ms ease-out, opacity 100ms ease-out;
+}
+.menu:hover .arrow-right {
+  transform: translateX(0%);
+  opacity: 1;
+}
