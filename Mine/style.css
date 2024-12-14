@@ -20,12 +20,61 @@ body {
   background: #ebe8e4;
 }
 
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #222831;
+}
+
 .sub {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* background: #ebe8e4; */
+}
+
+.mainmenu {
+  display: flex;
+  width: 50rem;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.mainmenu_text {
+  font-size: 100px;
+  font-weight: 800px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: "Kanit", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 3px #ebe8e4;
+  transform: translateX(10%);
+  transition: transform 0.5s ease-in-out;
+}
+.mainmenu:hover {
+  cursor: pointer;
+  & .mainmenu_text {
+    color: #ebe8e4;
+    transform: translateX(0%);
+  }
+  & .plus-lg {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.plus-lg {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+  color: #ebe8e4;
+  /* background: black; */
+  transform: translateY(35%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 100ms ease-out;;
 }
 
 .menu {
